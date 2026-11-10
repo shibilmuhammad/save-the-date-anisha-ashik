@@ -109,6 +109,6 @@ export const WEDDING_CONFIG: WeddingConfig = {
   socialSharing: {
     title: "Nikah Invitation — Mohammad Ashik & S. Anisha | Jan 3, 2027",
     description: "With the blessings of Almighty Allah & our families, you are cordially invited to celebrate the Nikah of Mohammad Ashik & S. Anisha on Sunday, January 3, 2027 at 11:00 AM at Zara Convention Centre, Ganjimata, Mangaluru.",
-    ogImage: "/images/couple.png"
+    ogImage: "/images/preview.jpeg"
   }
 };

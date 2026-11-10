@@ -69,7 +69,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://save-the-date-anisha-ashik.vercel.app'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://save-the-date-anisha-ashik.vercel.app')
+  ),
   title: WEDDING_CONFIG.socialSharing.title,
   description: WEDDING_CONFIG.socialSharing.description,
   icons: {
@@ -86,13 +89,13 @@ export const metadata: Metadata = {
     images: [
       {
         url: WEDDING_CONFIG.socialSharing.ogImage,
-        width: 1200,
-        height: 630,
-        alt: `${WEDDING_CONFIG.groomName} & ${WEDDING_CONFIG.brideName} Wedding Invitation`,
+        width: 720,
+        height: 1248,
+        alt: `${WEDDING_CONFIG.groomName} & ${WEDDING_CONFIG.brideName} Nikah Invitation`,
       }
     ],
     type: 'website',
-    siteName: `${WEDDING_CONFIG.groomName} & ${WEDDING_CONFIG.brideName} Wedding`,
+    siteName: `${WEDDING_CONFIG.groomName} & ${WEDDING_CONFIG.brideName} Nikah`,
     locale: 'en_US',
   },
   twitter: {
