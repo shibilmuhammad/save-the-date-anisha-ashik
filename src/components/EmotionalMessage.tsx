@@ -41,7 +41,7 @@ export const EmotionalMessage: React.FC = () => {
           {/* Quranic Verse Callout */}
           <div className="my-6 py-4 px-6 bg-[#ffffff]/80 rounded-2xl border border-[#D2C08A]/40 shadow-inner">
             <p className="font-serif-display text-xl sm:text-2xl text-[#3a2c18] italic leading-relaxed">
-              "{WEDDING_CONFIG.emotionalQuote}"
+              &ldquo;{WEDDING_CONFIG.emotionalQuote}&rdquo;
             </p>
           </div>
 

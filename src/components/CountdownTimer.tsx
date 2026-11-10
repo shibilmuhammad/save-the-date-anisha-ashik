@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useSyncExternalStore } from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Calendar } from 'lucide-react';
 import { WEDDING_CONFIG } from '@/config/weddingConfig';
@@ -12,13 +12,13 @@ interface TimeLeft {
   seconds: number;
 }
 
+const emptySubscribe = () => () => {};
+
 export const CountdownTimer: React.FC = () => {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    setMounted(true);
-
     const calculateTimeLeft = () => {
       // Parse wedding date from WEDDING_CONFIG
       const [year, month, day, hour = 0, minute = 0, second = 0] = WEDDING_CONFIG.weddingDate

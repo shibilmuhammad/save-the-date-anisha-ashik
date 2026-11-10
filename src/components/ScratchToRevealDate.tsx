@@ -8,7 +8,6 @@ import { WEDDING_CONFIG } from '@/config/weddingConfig';
 export const ScratchToRevealDate: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [isRevealed, setIsRevealed] = useState(false);
-  const [scratchPercent, setScratchPercent] = useState(0);
   const isDrawingRef = useRef(false);
 
   useEffect(() => {
@@ -84,7 +83,6 @@ export const ScratchToRevealDate: React.FC = () => {
       }
     }
     const percent = Math.round((transparentCount / (pixels.length / 4)) * 100);
-    setScratchPercent(percent);
 
     if (percent > 45 && !isRevealed) {
       setIsRevealed(true);

@@ -34,7 +34,7 @@ export const CoupleStory: React.FC = () => {
           </h2>
 
           <p className="font-serif-display text-lg text-[#9E824A] italic max-w-xl mx-auto mt-1">
-            "{WEDDING_CONFIG.weddingStoryText}"
+            &ldquo;{WEDDING_CONFIG.weddingStoryText}&rdquo;
           </p>
         </motion.div>
 

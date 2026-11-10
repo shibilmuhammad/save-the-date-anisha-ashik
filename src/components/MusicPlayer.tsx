@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import { Volume2, VolumeX } from 'lucide-react';
+import { VolumeX } from 'lucide-react';
 import { WEDDING_CONFIG } from '@/config/weddingConfig';
 
 interface MusicPlayerProps {

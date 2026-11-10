@@ -69,6 +69,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://save-the-date-anisha-ashik.vercel.app'),
   title: WEDDING_CONFIG.socialSharing.title,
   description: WEDDING_CONFIG.socialSharing.description,
   icons: {
