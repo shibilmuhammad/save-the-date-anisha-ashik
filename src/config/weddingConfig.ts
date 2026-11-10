@@ -77,14 +77,14 @@ export const WEDDING_CONFIG: WeddingConfig = {
   rsvpDeadline: "December 20, 2026",
   dressCode: "Modest Luxury Formal & Traditional",
   musicTrackUrl: "/bgm/audio.mpeg",
-  envelopeVideoUrl: "/videos/erasio_envelope_opening_6e1309b3_1080p.mp4",
+  envelopeVideoUrl: "/videos/erasio_Wedding_invitation_video_creation_7006136c_1080p.mp4",
   themeColors: {
     softIvory: "#F2F1E8",
     champagneGold: "#D2C08A",
     antiqueGoldBronze: "#9E824A",
   },
   images: {
-    hero: "/images/couple.png",
+    hero: "/images/preview.jpeg",
     bride: "/images/bride.jpeg",
     groom: "/images/groom.jpeg",
     auditorium: "/images/auditorium.jpg",
